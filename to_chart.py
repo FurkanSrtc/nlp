@@ -33,7 +33,7 @@ def most_15_words(data):
     ax.set_yticklabels(ngram)
     ax.invert_yaxis()  # labels read top-to-bottom
     ax.set_xlabel('Counts')
-    ax.set_title('Top-15 Most Common Unigrams in Positive Comments')
+    ax.set_title('Top-15 Most used word')
     
     # return plt
     # for word in data.tolist():
