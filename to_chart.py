@@ -13,8 +13,9 @@ from collections import Counter
 
 
 def most_15_words(data):
-    # token_list = [word for word in data.tolist().split(' ')]
-    token_list = data.tolist()
+    token_list = []
+    for word in data.tolist():
+        token_list += word.split(" ")
     frequencies=Counter(token_list)
     frequencies_sorted=sorted(frequencies.items(), key=lambda k: k[1],reverse=True)
     top_15=dict(frequencies_sorted[0:15])
@@ -34,4 +35,6 @@ def most_15_words(data):
     ax.set_xlabel('Counts')
     ax.set_title('Top-15 Most Common Unigrams in Positive Comments')
     
-    return plt
+    # return plt
+    # for word in data.tolist():
+    #     print(type(word).)
