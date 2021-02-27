@@ -7,26 +7,28 @@ Created on Sat Feb 27 22:07:48 2021
 """
 
 #pip install html2text
+
 import nltk
 from html2text import html2text
 import re
 import itertools
-import chardet 
+
 
 nltk.download('stopwords')
-WPT = nltk.WordPunctTokenizer()
-stop_words_list = nltk.corpus.stopwords.words('turkish')
-stop_words_list += ["migros", "reyondan", "orgnanik",
-                    "gezen", "boy", "küçük"]
+__WPT = nltk.WordPunctTokenizer()
+__stop_words_list = nltk.corpus.stopwords.words('turkish')
+__stop_words_list += ["migros", "reyondan", "orgnanik",
+                      "gezen", "boy", "küçük"]
 
-TAG_RE = re.compile(r'<[^>]+>')
+__TAG_RE = re.compile(r'<[^>]+>')
+
 
 def html_totext(text):
     return html2text(text)
 
 
 def remove_tags(text):
-    return TAG_RE.sub(' ', text)
+    return __TAG_RE.sub(' ', text)
 
 
 def lower_letters(txt):
@@ -40,7 +42,7 @@ def resub_comma(txt):
 
 def remove_stopwords(txt):
     return ' '.join([word for word in txt.split()
-                     if word.strip() not in stop_words_list]) 
+                     if word.strip() not in __stop_words_list]) 
 
 
 def remove_punctuation(txt):
