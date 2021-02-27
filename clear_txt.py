@@ -31,9 +31,27 @@ def remove_tags(text):
     return __TAG_RE.sub(' ', text)
 
 
+def remove_undefine_words(text):
+    text = text.replace('&;nbsp;', ' ')
+    text = text.replace('\n', ' ')
+    text = text.replace('8&;#39', "'")
+    text = text.replace('&lt', '')
+    text = text.replace('p&gt;', '')
+    text = text.replace('strong&gt;', ' ')
+    text = text.replace('&;amp;', '&')
+    text = text.replace('&;#39;', r'\ ')
+    text = text.replace('&;', '')
+    text = text.replace('nbsp;', ' ')
+    text = text.replace('//', ' ')
+    text = text.replace(' /', ' ')
+    return text
+
+
 def remove_html(text):
+    txt = remove_undefine_words(text)
     txt = html_totext(text)
-    return remove_tags(txt)
+    txt = remove_tags(txt)
+    return txt.strip()
 
 
 def lower_letters(txt):
@@ -81,6 +99,7 @@ def clean_text(txt):
     txt = remove_repeatedLetter(txt)
     txt = just_one_word(txt)
     return txt
+
 
 def main():
     pass
