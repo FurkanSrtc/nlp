@@ -16,7 +16,9 @@ import chardet
 nltk.download('stopwords')
 WPT = nltk.WordPunctTokenizer()
 stop_words_list = nltk.corpus.stopwords.words('turkish')
-stop_words_list += ["migros", "reyondan", "orgnanik", "gezen", "boy", "küçük"]
+stop_words_list += ["migros", "reyondan", "orgnanik",
+                    "gezen", "boy", "küçük"]
+
 TAG_RE = re.compile(r'<[^>]+>')
 
 def html_totext(text):
