@@ -31,6 +31,11 @@ def remove_tags(text):
     return __TAG_RE.sub(' ', text)
 
 
+def remove_html(text):
+    txt = html_totext(text)
+    return remove_tags(txt)
+
+
 def lower_letters(txt):
     txt = txt.replace("İ", "i")
     return txt.lower()
