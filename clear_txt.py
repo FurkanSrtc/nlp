@@ -17,7 +17,8 @@ import itertools
 nltk.download('stopwords')
 __WPT = nltk.WordPunctTokenizer()
 __stop_words_list = nltk.corpus.stopwords.words('turkish')
-__stop_words_list += ["migros"]
+__stop_words_list += ["migros", "g", "kg", "ml", "l", "cm",
+                      "x", "li", "lı", "ay", "lü"]
 
 __TAG_RE = re.compile(r'<[^>]+>')
 
@@ -64,7 +65,8 @@ def resub_comma(txt):
 
 def remove_stopwords(txt):
     return ' '.join([word for word in txt.split()
-                     if word.strip() not in __stop_words_list]) 
+                     if word.strip() not in __stop_words_list 
+                     and len(word) > 1]) 
 
 
 def remove_punctuation(txt):
@@ -94,10 +96,10 @@ def clean_text(txt):
     txt = lower_letters(txt)
     txt = resub_comma(txt)
     txt = remove_punctuation(txt)
-    txt = remove_stopwords(txt)
     txt = remove_integer(txt)
     txt = remove_repeatedLetter(txt)
     txt = just_one_word(txt)
+    txt = remove_stopwords(txt)
     return txt
 
 
