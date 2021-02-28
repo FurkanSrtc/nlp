@@ -17,8 +17,7 @@ import itertools
 nltk.download('stopwords')
 __WPT = nltk.WordPunctTokenizer()
 __stop_words_list = nltk.corpus.stopwords.words('turkish')
-__stop_words_list += ["migros", "reyondan", "orgnanik",
-                      "gezen", "boy", "küçük"]
+__stop_words_list += ["migros"]
 
 __TAG_RE = re.compile(r'<[^>]+>')
 
@@ -90,6 +89,7 @@ def just_one_word(txt):
 
 def clean_text(txt):
     txt = html_totext(txt)
+    txt = remove_undefine_words(txt)
     txt = remove_tags(txt)
     txt = lower_letters(txt)
     txt = resub_comma(txt)

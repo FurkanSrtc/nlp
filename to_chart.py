@@ -12,12 +12,14 @@ import pandas as pd
 from collections import Counter
 
 
-def most_15_words(data):
+def most_15_words(data, head_txt:str):
     token_list = []
     for word in data.tolist():
-        token_list += word.split(" ")
+        token_list += [_word for _word in word.split(" ") if _word]
+    token_list = [token for token in token_list if token_list]
     frequencies=Counter(token_list)
-    frequencies_sorted=sorted(frequencies.items(), key=lambda k: k[1],reverse=True)
+    frequencies_sorted=sorted(frequencies.items(), key=lambda k: k[1],
+                              reverse=True)
     top_15=dict(frequencies_sorted[0:15])
     plt.rcdefaults()
     fig, ax = plt.subplots()
@@ -33,8 +35,8 @@ def most_15_words(data):
     ax.set_yticklabels(ngram)
     ax.invert_yaxis()  # labels read top-to-bottom
     ax.set_xlabel('Counts')
-    ax.set_title('Top-15 Most used word')
-    
+    ax.set_title(f'{head_txt}. Top-15 Most used word')
+   
     # return plt
     # for word in data.tolist():
     #     print(type(word).)
