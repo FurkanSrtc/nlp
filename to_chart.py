@@ -35,7 +35,7 @@ def most_15_words(data, head_txt:str):
     ax.set_yticklabels(ngram)
     ax.invert_yaxis()  # labels read top-to-bottom
     ax.set_xlabel('Counts')
-    ax.set_title(f'{head_txt}. Top-15 Most used word')
+    ax.set_title(f'{head_txt} Top-15 Most used word')
    
     # return plt
     # for word in data.tolist():
