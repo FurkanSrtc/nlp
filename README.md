@@ -10,7 +10,7 @@ Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çö
 ## Yanlış kategori
 ![pickle](image/pickle.jpeg)
 
-## Yanlış Fiyat
+## Yanlış fiyat
 
 
 
