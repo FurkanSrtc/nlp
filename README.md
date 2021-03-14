@@ -1,13 +1,22 @@
 # Harizmi
 
-Harizmi, Popüler bir eticaret sitesi üzerineki karşılaşılan sorunu çözmek için geliştirimliş bir makina öğrenmesidir.
+Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çözmek için geliştirimliş bir makina öğrenmesidir.
+
+## Amaçlar
+
+* Yanlış kategorilendirilmiş ürünlerin önüne geçip kaliteyi artırmak.
+* Yanlış fiyatta ürün paylaşmasını engeleyip müşteri memnuniyeti artırmak.
+
+## Yanlış kategori
+![pickle](image/pickle.jpeg)
+
+## Yanlış Fiyat
 
 
 
-## Amaç
+## Sonuc
+![result](image/result_image.jpg.jpeg)
 
-* Hazirmi ile satışta olan ürünlerin kategorindeki yanlışıkları ortadan kaldırmak amaçlanmıştır.
-
-### Örnekler
-
-![first_example](Image/pickle.jpeg)
+# Author
+@FurkanSrtc
+@oguzhanozdmr
