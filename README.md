@@ -18,5 +18,5 @@ Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çö
 ![result](image/result_image.jpg.jpeg)
 
 # Author
-@FurkanSrtc
-@oguzhanozdmr
+* @FurkanSrtc
+* @oguzhanozdmr
