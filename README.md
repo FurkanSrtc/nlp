@@ -8,8 +8,13 @@ Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çö
 * Yanlış kategorilendirilmiş ürünlerin önüne geçip kaliteyi artırmak.
 * Yanlış fiyatta ürün paylaşmasını engeleyip müşteri memnuniyeti artırmak.
 
-## Yanlış kategori
+## Örnekler
+
+### Turşular
 ![pickle](image/pickle.jpeg)
+
+### Yumurta kategorisindeki ürünler
+Yumruta kategorisinde 190 üründen 73 tanesi yanlış olarak kategorilendirilmiş.
 ![wrong_cat](image/wrong_cat.jpg)
 
 ## Yanlış fiyat
