@@ -1,7 +1,7 @@
 
 # Harizmi
 
-Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çözmek için geliştirimliş bir makina öğrenmesidir. Veri olarak şuan online satış yapan web sitelerden web scraping yapılarak elde edildi.
+Harizmi, Popüler bir e-ticaret sitesi üzerinde karşılaşılan sorunları çözmek için geliştirimliş bir makina öğrenmesidir. Veri olarak şuan online satış yapan web sitelerden web scraping yapılarak elde edildi.
 
 ## Amaçlar
 
