@@ -9,7 +9,7 @@ Harizmi, Popüler bir e-ticaret sitesi üzerinde karşılaşılan sorunları ç�
 
 ## Hedefler
 
-* Ürünlerine yanlış fiyat girilmesinin engellenmesi ve müşteri menmuniyetin artılması.
+* Doğru kategorilendirilmiş ürünlerde yanlış fiyat girilmesinin engellenmesi ve müşteri menmuniyetin artılması.
 
 ## Örnekler
 
