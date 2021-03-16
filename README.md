@@ -6,7 +6,10 @@ Harizmi, Popüler bir eticaret sitesi üzerinde karşılaşılan sorunları çö
 ## Amaçlar
 
 * Yanlış kategorilendirilmiş ürünlerin önüne geçip kaliteyi artırmak.
-* Yanlış fiyatta ürün paylaşmasını engeleyip müşteri memnuniyeti artırmak.
+
+## Hedefler
+
+* Ürünlerine yanlış fiyat girilmesinin engellenmesi ve müşteri menmuniyetin artılması.
 
 ## Örnekler
 
@@ -18,7 +21,7 @@ Yumruta kategorisinde 190 üründen 73 tanesi yanlış olarak kategorilendirilmi
 ![wrong_cat](image/wrong_cat.jpg)
 
 ## Yanlış fiyat
-![e55a7440-3688-4bc4-b50b-7556f7baa2ac](https://user-images.githubusercontent.com/22814542/111073380-81859e80-84ef-11eb-93e5-94d313220112.jpg)
+![bike](image/bike.jpg)
 
 ## Sonuç
 
